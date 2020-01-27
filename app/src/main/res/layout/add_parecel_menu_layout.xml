@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/mainLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:layout_weight="1.4"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/foodimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/chauregular"
+                            android:gravity="left"
+                            android:maxLines="3"
+                            android:text="Maenaam Thai Restaurant"
+                            android:textColor="#000"
+                            android:textSize="17sp"
+                            android:visibility="visible" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/discription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="@dimen/_8dp"
+                                android:layout_marginEnd="@dimen/_10dp"
+                                android:layout_marginBottom="@dimen/_8dp"
+                                android:layout_toStartOf="@+id/minusTV"
+                                android:fontFamily="@font/ptsregular"
+                                android:gravity="left"
+                                android:maxLines="3"
+                                android:text="0.00"
+                                android:textColor="#000"
+                                android:textSize="14sp"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/minusTV"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_8dp"
+                                android:layout_toStartOf="@+id/quantTV"
+                                android:src="@drawable/ic_minus_yellow" />
+
+                            <TextView
+                                android:id="@+id/quantTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_8dp"
+                                android:layout_toStartOf="@+id/addTV"
+                                android:text="0"
+                                android:textColor="@color/black" />
+
+                            <ImageView
+                                android:id="@+id/addTV"
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_8dp"
+                                android:src="@drawable/ic_add_yellow" />
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/maintitles2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:drawableLeft="@drawable/ic_done_yellow_24dp"
+                                android:fontFamily="@font/ptsansregular"
+                                android:gravity="center"
+                                android:text="@string/breakfastlunch"
+                                android:textColor="#E7A126"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainLL"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:buttonTint="@color/black"
+                    android:fontFamily="@font/chauregular"
+                    android:singleLine="true"
+                    android:text="AddThis With Your Daily Meal"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

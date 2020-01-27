@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="@string/home"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/packag"
+            android:icon="@drawable/ic_add_box_black_24dp"
+            android:title="@string/packages" />
+        <item
+            android:id="@+id/menu"
+            android:icon="@drawable/ic_restaurant_menu_black_24dp"
+            android:title="@string/main_menu" />
+
+        <item
+            android:id="@+id/parcel"
+            android:title="@string/parcel_cafe"
+            android:icon="@drawable/cafe"/>
+        <item
+            android:id="@+id/party"
+            android:icon="@drawable/partybox"
+            android:title="@string/parcel_gethering" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/contact"
+            android:title="@string/contact_us" />
+
+        <item
+            android:id="@+id/history"
+            android:icon="@drawable/termscndtion"
+            android:title="@string/terms_and_conditions" />
+
+        <item
+            android:id="@+id/privacy"
+            android:icon="@drawable/termscndtion"
+            android:title="@string/privacy_policy_string" />
+
+
+<!--
+        <item
+            android:id="@+id/faq"
+            android:icon="@drawable/termscndtion"
+            android:title="@string/faq_string" />
+-->
+
+
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/logout"
+            android:title="@string/logout_string" />
+
+    </group>
+
+</menu>

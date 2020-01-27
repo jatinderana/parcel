@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aigestudio="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mainRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text=" Buy it Now"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/chauregular"
+                    android:gravity="center_horizontal"
+                    android:text="Weekly Package"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/emails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ptsansregular"
+                        android:gravity="center"
+                        android:inputType="textMultiLine"
+                        android:text="@string/subscription_type"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:visibility="visible">
+
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/spine"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/buttonnext"
+                android:fontFamily="@font/ptsansregular"
+                android:gravity="center"
+                android:text="@string/choose_type"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/spinTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12sp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="@string/no_of_subscribers"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/spin"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/buttonnext"
+                android:gravity="center"
+                android:text="Choose Type"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:visibility="gone">
+
+            </TextView>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_marginTop="12dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="Delivery Preference:"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobreakfast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:fontFamily="@font/ptsansregular"
+                        android:text="@string/breakfast"
+                        android:textColor="@color/black" />
+
+
+                    <RadioButton
+                        android:id="@+id/radiolunch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:fontFamily="@font/ptsansregular"
+                        android:text="@string/lunch"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/radioboth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:fontFamily="@font/ptsansregular"
+                        android:text="@string/both"
+                        android:textColor="@color/black" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/soft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ptsansregular"
+                    android:gravity="center"
+                    android:id="@+id/drinkTV"
+                    android:text="@string/soft_drink_string"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/drinks"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/buttonnext"
+                    android:fontFamily="@font/ptsansregular"
+                    android:gravity="center"
+                    android:text="Coca-cola"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ptsansregular"
+                    android:gravity="center"
+                    android:id="@+id/startDateTV"
+                    android:text="@string/start_date"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/etdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/buttonnext"
+                    android:fontFamily="@font/ptsansregular"
+                    android:gravity="center"
+                    android:text="4/5/2019"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/linearLayout5"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonbackgroundcancel"
+                android:text="@string/close_string"
+                android:fontFamily="@font/chauregular"
+                android:textColor="@color/black"
+                app:textAllCaps="false" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/backgroundbutton"
+                android:text="@string/next"
+                android:fontFamily="@font/chauregular"
+                android:textColor="#fff"
+                app:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/doneLeftBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/main_wheel_left"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:background="@color/wheel_background"
+            android:text="Done"
+            android:visibility="gone" />
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/main_wheel_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:background="@color/wheel_background"
+            android:visibility="gone"
+            aigestudio:wheel_indicator="true"
+            aigestudio:wheel_indicator_color="#E2DFDF"
+            aigestudio:wheel_atmospheric="true"
+            aigestudio:wheel_curved="true"
+            aigestudio:wheel_cyclic="true"
+            aigestudio:wheel_item_align="center"
+            aigestudio:wheel_item_text_color="#585555"
+            aigestudio:wheel_item_text_size="18sp"
+            aigestudio:wheel_selected_item_text_color="#444242" />
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/main_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:background="@color/wheel_background"
+            android:visibility="gone"
+            aigestudio:wheel_atmospheric="true"
+            aigestudio:wheel_curved="true"
+            aigestudio:wheel_cyclic="false"
+            aigestudio:wheel_indicator="true"
+            aigestudio:wheel_indicator_color="#E2DFDF"
+            aigestudio:wheel_item_align="center"
+            aigestudio:wheel_item_text_color="#585555"
+            aigestudio:wheel_item_text_size="18sp"
+            aigestudio:wheel_selected_item_text_color="#444242" />
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/drink_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:background="@color/wheel_background"
+            android:visibility="gone"
+            aigestudio:wheel_indicator="true"
+            aigestudio:wheel_indicator_color="#E2DFDF"
+            aigestudio:wheel_atmospheric="true"
+            aigestudio:wheel_curved="true"
+            aigestudio:wheel_cyclic="true"
+            aigestudio:wheel_item_align="center"
+            aigestudio:wheel_item_text_color="#585555"
+            aigestudio:wheel_item_text_size="18sp"
+            aigestudio:wheel_selected_item_text_color="#444242" />
+
+    </RelativeLayout>
+</ScrollView>
+

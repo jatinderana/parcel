@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/makanan_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:background="@drawable/rectangle_grey_box"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/foodimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/bucketLL"
+            android:layout_toEndOf="@+id/foodimage"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/chauregular"
+                android:text="food"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/priceTV"
+                        android:text=""
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/_4dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/selectBT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttonbackground"
+                        android:paddingStart="20dp"
+                        android:paddingTop="@dimen/_8dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="@dimen/_8dp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/ptsansregular"
+                        android:text="@string/add_to_bucket"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="@dimen/_8dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/remove_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/harga_text"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_indeterminate_check_box"
+                            android:gravity="center"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/quantity_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/harga_text"
+                            android:layout_gravity="start"
+                            android:layout_toLeftOf="@+id/add_quantity"
+                            android:paddingLeft="8dp"
+                            android:paddingTop="7.5dp"
+                            android:paddingRight="8dp"
+                            android:paddingBottom="7.5dp"
+                            android:text="0"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/add_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/harga_text"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_add_box_black"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_below="@+id/bucketLL"
+            android:background="#939393" />
+    </RelativeLayout>
+</RelativeLayout>

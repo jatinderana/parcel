@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture"
+    android:orientation="vertical"
+    tools:context=".ParcelGeathering.ParcelBoxActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/titlemenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:fontFamily="@font/chauregular"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/parcel_gathering_box"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/mainBar"
+        android:id="@+id/mainRL"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/parcelmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:focusable="false"
+            android:layout_marginBottom="4dp"
+            android:layout_above="@+id/bottomRL"
+            android:orientation="vertical"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottomRL"
+            android:background="@color/white"
+            android:padding="@dimen/_10dp">
+
+            <TextView
+                android:id="@+id/itemTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chauregular"
+                android:text="@string/no_of_items"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/itemValueTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/itemTV"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_toEndOf="@+id/itemTV"
+                android:text="0 "
+                android:fontFamily="@font/ptsansregular"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/priceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemTV"
+                android:layout_marginTop="@dimen/_10dp"
+                android:fontFamily="@font/chauregular"
+                android:text="@string/total_price"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/priceValueTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/priceTV"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_toEndOf="@+id/priceTV"
+                android:text="0 "
+                android:fontFamily="@font/ptsansregular"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/payNowTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/buttonbackground"
+                android:paddingStart="16dp"
+                android:fontFamily="@font/chauregular"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:text="@string/add_to_cart_string"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

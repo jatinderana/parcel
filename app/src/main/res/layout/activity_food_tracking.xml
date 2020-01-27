@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TrackPackage.FoodTrackingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/toolbarRL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_8dp"
+                android:drawableLeft="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/chauregular"
+                android:gravity="center"
+                android:id="@+id/titleTV"
+                android:text="@string/parcel_gathering_box_history"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp" />
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbarRL">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/firstStep"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shadow_circle"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_coocker" />
+
+                <View
+                    android:id="@+id/firstStepV"
+                    android:layout_width="10dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/firstStep"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorPrimary"
+                    android:visibility="invisible" />
+
+                <View
+                    android:id="@+id/firstStepUV"
+                    android:layout_width="10dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/firstStep"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/unfilled_view" />
+
+
+                <TextView
+                    android:id="@+id/progressTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstStep"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/firstStepUV"
+                    android:text="@string/in_progress_string"
+                    android:fontFamily="@font/ptsansregular"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/secondStep"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/firstStepV"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shadow_circle"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/step_two" />
+
+                <View
+                    android:id="@+id/secondStepV"
+                    android:layout_width="10dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/secondStep"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorPrimary"
+                    android:visibility="invisible" />
+
+                <View
+                    android:id="@+id/secondStepUV"
+                    android:layout_width="10dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/secondStep"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/unfilled_view" />
+
+                <TextView
+                    android:id="@+id/dispatchTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondStep"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/secondStepUV"
+                    android:text="@string/ready_to_dispatch_string"
+                    android:textColor="#000"
+                    android:fontFamily="@font/ptsansregular"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/thirdStep"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/secondStepUV"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shadow_circle"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_scooter" />
+
+                <View
+                    android:id="@+id/fourStepV"
+                    android:layout_width="10dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/thirdStep"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorPrimary"
+                    android:visibility="invisible" />
+
+                <View
+                    android:id="@+id/fourStepUV"
+                    android:layout_width="10dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/thirdStep"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/unfilled_view" />
+
+                <TextView
+                    android:id="@+id/pickUpTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thirdStep"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/fourStepUV"
+                    android:text="@string/picked_up_string"
+                    android:fontFamily="@font/ptsansregular"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/deliverTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/thirdStep"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/fourStepUV"
+                    android:text="@string/delivered_not_delivered"
+                    android:textColor="#000"
+                    android:fontFamily="@font/ptsansregular"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/fourStepIV"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/fourStepUV"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shadow_circle"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_deliver_box" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/itemRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fourStepIV"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:nestedScrollingEnabled="false" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

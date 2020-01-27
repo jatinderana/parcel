@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/mainLL"
+    android:orientation="vertical"
+    android:padding="@dimen/_10dp">
+
+    <ImageView
+        android:id="@+id/dialogTV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/enter_quantity_string"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ptsansregular"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_infomation"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black" />
+
+
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_12dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/ptsansregular"
+        android:text="@string/are_you_sure"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/termCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:textAlignment="center"
+        android:text="@string/your_parcel_gathering_box_es_will_be_delivered_after_24_hours_from_now"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp">
+
+        <TextView
+            android:id="@+id/nextBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/chauregular"
+            android:paddingStart="20dp"
+            android:paddingTop="@dimen/_8dp"
+            android:paddingEnd="20dp"
+            android:textSize="13sp"
+            android:paddingBottom="@dimen/_8dp"
+            android:text="@string/yes_checkout_now"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/closeBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonbackground_gray"
+            android:fontFamily="@font/chauregular"
+            android:paddingStart="20dp"
+            android:paddingTop="@dimen/_12dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:paddingBottom="@dimen/_8dp"
+            android:layout_below="@+id/nextBT"
+            android:textSize="13sp"
+            android:text="@string/no_cancel_please"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</LinearLayout>

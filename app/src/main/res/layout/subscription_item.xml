@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardBreakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/imageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mn2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:background="#80000000"
+                        android:fontFamily="@font/chauregular"
+                        android:gravity="center"
+                        android:text="@string/breakfast_string"
+                        android:id="@+id/mealTV"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/ptsansregular"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/liver_sandwich_hot_dog_sandwich_olives_honey_toast"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/replaceRL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/replaceIV"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:src="@drawable/ic_replace" />
+
+                        <TextView
+                            android:id="@+id/replaceTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_4dp"
+                            android:layout_toEndOf="@+id/replaceIV"
+                            android:text="@string/replaced_string"
+                            android:textColor="@color/red"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/quantityRL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/doubleIV"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:src="@drawable/user_plus" />
+
+                        <TextView
+                            android:id="@+id/doubleTTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_4dp"
+                            android:layout_toEndOf="@+id/doubleIV"
+                            android:text="@string/quantity_0"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/parcelRL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/parcelIV"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:src="@drawable/glass_parcel" />
+
+                        <TextView
+                            android:id="@+id/parcelTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_4dp"
+                            android:layout_toEndOf="@+id/parcelIV"
+                            android:text="@string/parcel_cafe_string"
+                            android:textColor="@color/red"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/replaceLL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/replaceBIV"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/ptsansregular"
+                            android:gravity="center_horizontal"
+                            android:src="@drawable/replace_icon"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/replaced"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ptsansregular"
+                            android:text="@string/replace_string"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/doubleLL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/doubleBIV"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/ptsansregular"
+                            android:gravity="center_horizontal"
+                            android:src="@drawable/double_icon"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/doubleTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ptsansregular"
+                            android:text="@string/double_meal_string"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/parcelLL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/parcelBIV"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/ptsansregular"
+                            android:gravity="center_horizontal"
+                            android:src="@drawable/parcel_cafe_icon"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/parcelCafe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ptsansregular"
+                            android:gravity="center_horizontal"
+                            android:text="@string/parcel_cafe_string"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardLunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/imageviewLunch"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mn2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:background="#80000000"
+                        android:fontFamily="@font/chauregular"
+                        android:gravity="center"
+                        android:text="@string/lunch"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_nameLunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/ptsansregular"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Liver Sandwich, Hot Dog Sandwich,Olives,Honey,Toast"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/replaceLRL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/replaceLIV"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:src="@drawable/ic_replace" />
+
+                        <TextView
+                            android:id="@+id/replaceLTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_4dp"
+                            android:layout_toEndOf="@+id/replaceLIV"
+                            android:text="@string/replaced_string"
+                            android:textColor="@color/red"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/quantityLRL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/doubleLIV"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:src="@drawable/user_plus" />
+
+                        <TextView
+                            android:id="@+id/doubleTLTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_4dp"
+                            android:layout_toEndOf="@+id/doubleLIV"
+                            android:text="@string/quantity_0"
+                            android:textColor="@color/red"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/parcelLRL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/parcelLIV"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:src="@drawable/glass_parcel" />
+
+                        <TextView
+                            android:id="@+id/parcelLTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_4dp"
+                            android:layout_toEndOf="@+id/parcelLIV"
+                            android:text="@string/parcel_cafe"
+                            android:textColor="@color/red"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/replaceLLLunch"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/replaceLunch"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/ptsansregular"
+                            android:gravity="center_horizontal"
+                            android:src="@drawable/replace_icon"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/replacedLunch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ptsansregular"
+                            android:textSize="12sp"
+                            android:text="@string/replace_string"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/doubleLLLunch"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/doubleLunch"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/ptsansregular"
+                            android:gravity="center_horizontal"
+                            android:src="@drawable/double_icon"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/doubleTVLunch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ptsansregular"
+                            android:text="@string/double_meal_string"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/parcelLLLunch"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/parcelLunch"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/ptsansregular"
+                            android:gravity="center_horizontal"
+                            android:src="@drawable/parcel_cafe_icon"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/parcelCafeLunch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ptsansregular"
+                            android:gravity="center_horizontal"
+                            android:text="@string/add_parcel_cafe"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>

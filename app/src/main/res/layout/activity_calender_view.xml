@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/ll_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:id="@+id/titlemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/chauregular"
+                android:gravity="center"
+                android:text="@string/packages"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="          " />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/headerLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <FrameLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp">
+
+                <ImageButton
+                    android:id="@+id/ib_prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/previous" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="January"
+                    android:textColor="#4b4a4a"
+                    android:fontFamily="@font/ptsansregular"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_month"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/tap_on_day_to_see_its_detail"
+                    android:textColor="#4b4a4a"
+                    android:fontFamily="@font/ptsansregular"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tap"
+                    android:layout_centerHorizontal="true"
+                    android:text="Weekly"
+                    android:fontFamily="@font/ptsansregular"
+                    android:textColor="#4b4a4a"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp">
+
+                <ImageButton
+                    android:id="@+id/Ib_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/right" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingLeft="2dp"
+            android:paddingTop="10dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="S"
+                android:fontFamily="@font/ptsansregular"
+                android:textColor="#4b4a4a" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/ptsansregular"
+                android:text="M"
+                android:textColor="#4b4a4a" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/ptsansregular"
+                android:text="T"
+                android:textColor="#4b4a4a" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="W"
+                android:fontFamily="@font/ptsansregular"
+                android:textColor="#4b4a4a" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/ptsansregular"
+                android:text="T"
+                android:textColor="#4b4a4a" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ptsansregular"
+                android:gravity="center"
+                android:text="F"
+                android:textColor="#4b4a4a" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="S"
+                android:fontFamily="@font/ptsansregular"
+                android:textColor="#4b4a4a" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#dfdfdf"
+            android:padding="1dp" />
+
+        <GridView
+            android:id="@+id/gv_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:cacheColorHint="#ffffff"
+            android:gravity="center"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="7"
+            android:padding="2dp"
+            android:stretchMode="columnWidth"
+            android:textAlignment="gravity">
+
+        </GridView>
+            <LinearLayout
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ll_calendar"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/backgroundbutton"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/next"
+                    android:id="@+id/nextBT"
+                    android:fontFamily="@font/chauregular"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ok">
+
+
+            </RelativeLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

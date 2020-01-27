@@ -1,0 +1,466 @@
+<resources>
+    <string name="app_name">Parcel</string>
+    <string name="app_name_new">Parcel</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="breakfast_lunch"><![CDATA[Breakfast & Lunch :]]></string>
+    <string name="menu">Menu  Loading Please Wait...</string>
+    <string name="login">Login</string>
+    <string name="price_string">OMR</string>
+    <string name="google_map_key">AIzaSyDLOQsczTjNrp0wrCd0nrm8nhaP78PHly8</string>
+    <string name="weekly">Weekly</string>
+    <string name="breakfast">Breakfast </string>
+    <string name="breakfast_new">Breakfast </string>
+    <string name="lunch">Lunch </string>
+    <string name="lunch_new">Lunch </string>
+    <string name="both">Both </string>
+    <string name="both_new">Both </string>
+
+    <string name="both_ar"> على حد سواء</string>
+
+
+    <string name="breakfast_ar">وجبة افطار</string>
+
+    <string name="lunch_ar">غداء</string>
+    <string name="lunch_ar_new">وجبة الغداء </string>
+    <string name="both_ar_new"> الإفطار و الغداء</string>
+    <string name="breakfast_ar_new">وجبة الإفطار  </string>
+    <string name="view_menu">View Menu</string>
+    <string name="choose_package">Choose Package</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="about_us">About Us</string>
+    <string name="packages">Packages</string>
+    <string name="main_menu">Subscription Menu</string>
+    <string name="parcel_oman">Parcel</string>
+    <string name="party_box">Party Box</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="logout">Logout</string>
+    <string name="subscription_type">Subscription Type</string>
+    <string name="cancel">Cancel</string>
+    <string name="subscribe_string">Subscribe</string>
+    <string name="send">send</string>
+    <string name="tap_on_day_to_see_its_detail">Tap on day to see its detail</string>
+    <string name="next">Next</string>
+    <string name="price_arabic">﷼</string>
+    <string name="check_out">Check Out</string>
+    <string name="first_name">First Name*</string>
+    <string name="last_name">Last Name*</string>
+    <string name="email_address">Email Address*</string>
+    <string name="phone">Phone*</string>
+    <string name="company">Company*</string>
+    <string name="office_no">Office/House No*</string>
+    <string name="floor_no">Floor No</string>
+    <string name="zip_postal_code">Zip/Postal Code</string>
+    <string name="delivery_location">Delivery Location</string>
+    <string name="package_summary">Package Summary</string>
+    <string name="package_summary_checkout">Package Summary</string>
+
+    <string name="package_name">Package Name</string>
+    <string name="package_type">Package Name</string>
+    <string name="subtotal">SubTotal</string>
+
+    <string name="bucket">Bucket</string>
+    <string name="Login">Login</string>
+    <string name="terms_and_conditions">Terms And Conditions</string>
+    <string name="breakfastlunch"><![CDATA[Breakfast & Lunch]]></string>
+    <string name="promo_code">Have a Promo code?</string>
+    <string name="promo_code_checkout">Have a Promo code?</string>
+
+    <string name="freeze">Freeze</string>
+
+    <string name="i_agree_to_the_parcel_oman_terms_conditions"><![CDATA[I agree to the Parcel Oman Terms & Conditions]]></string>
+
+    <string name="data_loading">Data loading Please Wait!</string>
+
+    <string name="home_location">Home Location</string>
+
+    <string name="save_address">Save Address</string>
+
+    <string name="close_string">Close</string>
+
+    <string name="password_string">Password</string>
+
+    <string name="no_account_yet_create_one">No account yet? Create one</string>
+
+    <string name="account_no">Account No</string>
+
+    <string name="select_string">Select</string>
+
+
+    <string name="i_agree_to_the_parcel_oman_ter"><![CDATA[I agree to the Parcel Oman Terms & Conditions]]></string>
+
+    <string name="send_gift_to_friend">Send Gift to Friend</string>
+
+    <string name="company_name">Company Name</string>
+
+    <string name="send_gift">Send Gift</string>
+
+    <string name="parcel_gethering">Parcel Gathering Box</string>
+
+    <string name="parcel_gathering_box">Parcel Gathering Box</string>
+
+    <string name="choose_upto_4_options_a_total_of_24_pcs_in_a_platter">Choose Upto 4 Options. A Total Of 24 Pcs In A Platter@ OMR %1$s</string>
+
+    <string name="choose_upto_6_options_a_total_of_36_pcs_in_a_platter">Choose Upto 6 Options. A Total Of 36 Pcs In A Platter@ OMR %1$s</string>
+
+
+    <string name="cart_string">Cart</string>
+
+    <string name="want_to_exit">Do you really want to exit?</string>
+
+    <string name="food_of_the_day">Food Of The Day !!!</string>
+
+
+    <string name="subscribe">Subscribers</string>
+    <string name="subscribe_new">مشتركين</string>
+    <string name="both_string">Both</string>
+    <string name="from_string">From : </string>
+    <string name="order_start_string">Order  : </string>
+    <string name="to_string">To : </string>
+    <string name="exciting_meal">Exciting Meal on </string>
+    <string name="exciting_meal_string">Exciting Meal on  </string>
+    <string name="exciting_meal_string_ar">وجبة مثيرة على</string>
+    <string name="active_package_string">Active Package</string>
+    <string name="active_package_string_ar">حزمة نشطة</string>
+    <string name="sorry_donot_serve">Sorry! We don\'t serve on Fridays</string>
+    <string name="sorry_donot_sat">Sorry! We don\'t serve on Saturdays</string>
+    <string name="parcel_added_success">Parcel added successfully</string>
+    <string name="quantity_double_success">Quantity Double Successfully!</string>
+    <string name="home_string">Home</string>
+    <string name="menu_string">Menu</string>
+    <string name="add_cart_string">Add Cart</string>
+    <string name="upgrade_package_string">Upgrade Package</string>
+    <string name="freeze_package_string">Freeze Package</string>
+    <string name="enter_data_field">Please Enter data in all fields</string>
+    <string name="enter_promo">Enter Promo Code</string>
+    <string name="code_not_valid">Code is not Valid</string>
+    <string name="please_enter_valid_email">Your Provided E-mail Is Already Associated With Another Account.</string>
+    <string name="privacy_policy_string">Privacy Policy</string>
+    <string name="logout_string">Logout</string>
+    <string name="my_profile_string">My Profile</string>
+
+    <string name="my_subscriptions_string">My Subscriptions</string>
+
+    <string name="subscription_history_string">Subscription History</string>
+    <string name="change_password_string">Change Password</string>
+
+    <string name="save_string">Save</string>
+    <string name="enter_your_old_password">Enter Your Old Password*</string>
+    <string name="enter_your_new_password">Enter Your New Password*</string>
+    <string name="update_password">Update Password</string>
+    <string name="my_history">My History</string>
+    <string name="group_string">Group</string>
+    <string name="group_string_ar">مجموعة</string>
+    <string name="order_id_ar">: رقم التعريف الخاص بالطلب</string>
+    <string name="from_string_ar">  من عند : </string>
+    <string name="_2_subscribers">2 Subscribers</string>
+    <string name="to_string_ar">إلى : </string>
+    <string name="order_start_string_ar">ترتيب البدء</string>
+    <string name="order_id">Order ID :</string>
+    <string name="parcel_gathering_box_history">Parcel Gathering Box History</string>
+
+    <string name="order_id_parcel">Order ID</string>
+
+    <string name="order_date_parcel">Order Date</string>
+
+    <string name="comapany_name_parcel">Comapany Name</string>
+
+
+    <string name="floor_no_string">Floor No</string>
+
+    <string name="amount_parcel">Amount</string>
+
+    <string name="status_parcel">Status</string>
+
+    <string name="action_parcel">Action</string>
+    <string name="subject_string">Subject</string>
+    <string name="send_message_string">Send Message</string>
+    <string name="message_string">Message</string>
+    <string name="main_menu_string">Subscription Menu</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="parcel_cafe_string">Parcel Cafe</string>
+    <string name="parcel_cafe_string_ar">بارسيل كافيه</string>
+
+    <string name="weekly_string">Weekly</string>
+
+    <string name="_2_weeks">2 Weeks</string>
+
+    <string name="lunch_string">Lunch :</string>
+
+    <string name="start_date">Start Date</string>
+    <string name="individual_string">Individual</string>
+    <string name="_2_person">2 Person</string>
+
+    <string name="_4_person">4 Person</string>
+
+    <string name="_6_person">6 Person</string>
+
+    <string name="_8_person">8 Person</string>
+    <string name="no_of_subscribers">No of Subscribers</string>
+
+    <string name="choose_type">Choose Type</string>
+    <string name="package_menu">Package Menu</string>
+    <string name="comments_string">Comments</string>
+
+    <string name="breakfast_string">Breakfast</string>
+    <string name="add_to_cart_string">Add to Cart</string>
+
+    <string name="no_of_items">No. of Items :</string>
+
+    <string name="total_price">Total Price :</string>
+    <string name="add_to_bucket">Add to Bucket</string>
+    <string name="seleted_string">Selected</string>
+    <string name="party_box_summary">Party Box Summary</string>
+    <string name="login_string">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="in_progress_string">In Progress()</string>
+
+    <string name="ready_to_dispatch_string">Ready to Dispatch()</string>
+
+    <string name="picked_up_string">Picked Up()</string>
+
+    <string name="delivered_not_delivered">Delivered/ Not Delivered()</string>
+    <string name="qty_string">QTY</string>
+
+    <string name="total">Total</string>
+    <string name="my_account">My Account</string>
+    <string name="food_string">Food</string>
+
+    <string name="this_food_has_been_gifted">This Food Has Been Gifted..</string>
+
+    <string name="gift_to_friend">Gift to Friend</string>
+
+    <string name="food_of_string">Food of</string>
+
+    <string name="replace_string">Replace</string>
+
+    <string name="double_string">Double</string>
+
+
+    <string name="double_meal_string">Double Your Meal</string>
+    <string name="double_meal_string_ar">مضاعفة وجبة الخاص بك</string>
+
+    <string name="add_parcel_cafe">Add Parcel Cafe</string>
+
+    <string name="this_food_has_been_gifted_ar">هذا الطعام قد تم الموهوبين ..</string>
+    <string name="gift_to_friend_ar">هدية لصديق</string>
+
+    <string name="food_parcel">Food Parcel</string>
+    <string name="food_of_string_ar">الغذاء من</string>
+    <string name="replace_string_ar">يحل محل</string>
+    <string name="double_string_ar">مزدوج</string>
+    <string name="add_parcel_cafe_ar">أضف بارسل كافيه</string>
+    <string name="breakfast_string_ar">وجبة افطار</string>
+    <string name="replaced_string">Replaced</string>
+    <string name="replaced_string_ar">استبدال</string>
+    <string name="quantity_0">Quantity:0</string>
+
+    <string name="parcel_cafe">Parcel Cafe</string>
+    <string name="qaunt_String">Quantity :</string>
+    <string name="qaunt_String_ar">الكمية:</string>
+    <string name="party_box_ar">صندوق الحزب</string>
+
+    <string name="you_can_replace_your">You Can Replace Your Food Maximum 1time(s) With Current Subscription!</string>
+
+
+    <string name="time_subscription"> time(s) With Current Subscription!</string>
+    <string name="your_food">You Can Replace Your Food Maximum </string>
+    <string name="upgrade_package_dialog">Upgrade Package</string>
+
+
+    <string name="select_package_upgrade">Select Package</string>
+
+    <string name="upgrade_string">Upgrade</string>
+    <string name="breakfast_and_lunch"><![CDATA[Breakfast & Lunch:]]></string>
+    <string name="select_date_string">Select Date</string>
+
+    <string name="start_date_string">Start Date</string>
+
+    <string name="end_date_string">End Date</string>
+    <string name="delivery_address_string">Delivery Address</string>
+    <string name="office_no_string">Office No :</string>
+
+    <string name="floor_no_tring">Floor No :</string>
+
+    <string name="company_name_string">Company Name :</string>
+
+    <string name="check_demo">Company Name :</string>
+
+    <string name="no_of_attempts">You Have Exceeded The Maximum Number Of Attempts!</string>
+    <string name="no_of_replace_attempts">You Have Exceeded The Maximum Number Of Replacement Attempts!</string>
+
+    <string name="selected_new">Selected</string>
+    <string name="add_address">Add Address</string>
+
+
+    <string name="you_have_frozen">You have frozen this day!</string>
+
+    <string name="please_fill_all_detail">Please enter all fields</string>
+
+    <string name="email_has_been_sent_string">Your Order Was Gifted Successfully. An Email Has Been Sent To Your provided email account !</string>
+    <string name="profile_updated_success">Your Profile has been Updated successfully</string>
+
+
+    <string name="please_enter_email">Please Enter Your Email</string>
+
+    <string name="please_enter_pass">Please Enter Your Password</string>
+
+    <string name="password_sent_to_mail">Password sent to mail</string>
+
+    <string name="please_enter_email_id">Please Enter EmailId</string>
+
+    <string name="please_enter_correct_email">Please enter correct email Id!</string>
+
+    <string name="you_have_exceeded">You Have Exceeded The Maximum Number Of Freeze Attempts !</string>
+
+    <string name="language_already_selected">Language already selected!</string>
+
+    <string name="you_already_upgraded">You already have upgraded this package !</string>
+
+    <string name="package_freeze">Package Freezed Successfully!</string>
+    <string name="date_of_birth">Date of Birth</string>
+
+    <string name="userId">User ID</string>
+    <string name="loading_history">Loading History</string>
+    <string name="loading_history_ar">تحميل التاريخ</string>
+    <string name="forgot_password_string">Forget Password</string>
+
+    <string name="email_address_string">Email Address*</string>
+    <string name="soft_drink_string">Soft Drink?</string>
+
+    <string name="pepsi_string">Pepsi</string>
+
+    <string name="cola_string">Coca-Cola</string>
+    <string name="_3_month">3 Months</string>
+
+    <string name="month_string">1 Month</string>
+    <string name="sorry_already_have">Sorry, You already have an Active Package!!!</string>
+    <string name="sorry_already_have_ar">آسف ، لديك بالفعل حزمة نشطة!</string>
+    <string name="you_have_choose">You have Choose</string>
+    <string name="enter_correct_number">Please enter correct account number and password!</string>
+    <string name="event_details_string">Event Detail is available for current session only.</string>
+    <string name="event_detail_available">Event Detail is available for current session only.</string>
+    <string name="we_are_launching_soon_keep_in_touch_for_the_updates">We are launching Soon. Keep in touch for the updates...</string>
+    <string name="no_of_subscriber">No of subscriber :</string>
+    <string name="soft_drink">Soft Drink : </string>
+    <string name="ready_to_dispatch">Ready to Dispatch(</string>
+
+    <string name="in_progress_track_string">In Progress(</string>
+
+    <string name="pick_up_track_string">Picked Up(</string>
+
+    <string name="not_delivered_string">Delivered/ Not Delivered (</string>
+    <string name="party_box_string">Party Box</string>
+    <string name="enter_promocode_string">Enter Promocode</string>
+
+    <string name="apply_string">Apply</string>
+    <string name="enter_first_name">Enter First Name</string>
+
+    <string name="enter_last_name">Enter Last Name</string>
+
+    <string name="enter_email">Enter Email</string>
+
+    <string name="enter_phone_number">Enter Phone number</string>
+
+    <string name="enter_quantity_string">Enter Quantity</string>
+    <string name="enter_quantity_extra_string">Enter Extra Quantity</string>
+
+    <string name="omr_0_string">OMR 0</string>
+    <string name="please_select_item">Please add quantity</string>
+    <string name="enter_subject">Please enter subject</string>
+
+    <string name="enter_message">Please enter message</string>
+    <string name="sorry_you_have_package">Sorry, You already have an Active Package !!!</string>
+    <string name="we_dont_serve_on_fri">Sorry! We don\'t serve on Fridays</string>
+    <string name="we_dont_serve_on_sat">Sorry! We don\'t serve on Saturdays</string>
+    <string name="sorry_sunday_not_accept">Sorry Sundays wont be accepted</string>
+    <string name="no_history">No History</string>
+    <string name="an_email_sent">An Email has been sent to</string>
+
+    <string name="following_address">Your food will be delivered at following Address.</string>
+    <string name="cpmpany_name">Company Name :</string>
+
+    <string name="home_value">Home :</string>
+
+    <string name="floor_value">Floor :</string>
+
+    <string name="location_value">Location :</string>
+
+    <string name="mobile_value">Mobile No :</string>
+    <string name="your_order_was_gifted_successfully">Your Order Was Gifted Successfully</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="liver_sandwich_hot_dog_sandwich_olives_honey_toast">Liver Sandwich, Hot Dog Sandwich,Olives,Honey,Toast</string>
+    <string name="faq_string">FAQs</string>
+    <string name="for_more_queries">For More Queries, Please Call Us At +968 98555513</string>
+    <string name="card_no">Card No</string>
+
+    <string name="card_no_string">Card No*</string>
+
+    <string name="expiry_year">Expiry Year</string>
+
+    <string name="expiry_month">Expiry month</string>
+
+
+    <string name="cvv_string">CVV</string>
+    <string name="please_enter_card">Please Enter Card Number</string>
+
+    <string name="please_enter_month">Please Enter Month</string>
+
+    <string name="please_enter_year">Please Enter Year</string>
+
+    <string name="please_enter_cvv">Please enter CVV</string>
+
+    <string name="add_card">Add Card</string>
+
+    <string name="make_this_default_card">Make This Default Card?</string>
+
+    <string name="show_cards_string">Show Cards</string>
+
+    <string name="card_string">Cards</string>
+
+    <string name="no_cards_available">No Cards Available</string>
+    <string name="default_string">Default</string>
+    <string name="card_added">Card added successfully</string>
+    <string name="your_email_account_string">Your Provided E-mail Is Already Associated With Another Account.</string>
+    <string name="your_phone_account_string">Your Provided Phone Number Is Already Associated With Another Account.</string>
+
+    <string name="added_to_bucket">Added to Bucket</string>
+    <string name="i_agree_to_the_food_parcel_terms_conditions"><![CDATA[I Agree To The Food Parcel Terms & Conditions]]></string>
+    <string name="sorry_you_have_not_added_anything_to_the_bucket">Sorry, You Have Not Added Anything To the Bucket.</string>
+    <string name="are_you_sure">Are You Sure?</string>
+
+    <string name="your_parcel_gathering_box_es_will_be_delivered_after_24_hours_from_now">Your Parcel Gathering Box(es) Will Be Delivered After Mentioned Time(s) From Now.</string>
+    <string name="yes_checkout_now">Yes, Checkout Now!</string>
+
+    <string name="no_cancel_please">No, Cancel Please!</string>
+    <string name="enter_old_pass">Please Enter Your Old Password</string>
+
+    <string name="enter_new_password">Please Enter Your New Password</string>
+
+    <string name="password_changed">Password Changed Successfully</string>
+    <string name="you_don_t_have_any_subscription_yet">You don\'t have any Subscription yet!</string>
+    <string name="ok_string">OK</string>
+
+    <string name="congratulation_string_checkout">Congratulations! Your Order Was Completed Successfully.</string>
+
+    <string name="thank_you">Thank You!</string>
+
+    <string name="further_assistance">We Have Received Your Order. An Email Has Been Sent To Your Provided Email Address. Please Log In Your Account For Further Assistance.</string>
+    <string name="pay_new_card">Pay With New Card</string>
+    <string name="save_this_card_for_future_payments">Save This Card For Future Payments</string>
+
+    <string name="_100_secure">100% Secure Payments Powered By CyberSource</string>
+    <string name="no_card_to_show">No cards to show</string>
+
+
+    <string-array name="person_array">
+
+        <item>2 Person</item>
+        <item>3 Person</item>
+    </string-array>
+</resources>

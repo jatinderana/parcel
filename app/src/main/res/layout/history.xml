@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:background="#EFEFF4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#EFEFF4"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/toptitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/chauregular"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/twenty" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mn2" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ptnormal"
+                        android:gravity="center"
+                        android:text="Maenaam Thai Restaurant"
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/discription"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/ptnormal"
+                        android:gravity="center"
+                        android:text="Burgers, American, Sandwiches, Fast Food, BBQ,urgers, American, Sandwiches ..."
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/doutedbackground"
+                            android:fontFamily="@font/ptnormal"
+                            android:gravity="center"
+                            android:text="@string/breakfast"
+                            android:textColor="@color/colorPrimary" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainLLView"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/both"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:drawableLeft="@drawable/ic_done_black_24dp"
+                        android:fontFamily="@font/chauregular"
+                        android:gravity="left"
+                        android:maxLines="3"
+                        android:layout_weight="1"
+                        android:text="@string/both_string"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/group"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="4dp"
+                        android:drawableLeft="@drawable/ic_group_black_24dp"
+                        android:fontFamily="@font/chauregular"
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:maxLines="3"
+                        android:text="@string/group_string"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <TextView
+
+                        android:id="@+id/subcriber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:drawableLeft="@drawable/ic_person_red_24dp"
+                        android:fontFamily="@font/chauregular"
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:maxLines="3"
+                        android:text="@string/_2_subscribers"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:id="@+id/imagehistory"
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:scaleType="fitXY" />
+
+
+                            <TextView
+                                android:id="@+id/week"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#80000000"
+                                android:fontFamily="@font/chauregular"
+                                android:gravity="center"
+                                android:maxLines="3"
+                                android:text=" Monthly"
+                                android:textColor="#fff"
+                                android:textSize="17sp"
+                                android:visibility="visible" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/datefrom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                            android:fontFamily="@font/ptsregular"
+                            android:gravity="left|center_vertical"
+                            android:maxLines="3"
+                            android:text="From 25 April 2019 "
+                            android:textColor="#000"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/dateto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                            android:fontFamily="@font/ptsregular"
+                            android:gravity="left|center_vertical"
+                            android:maxLines="3"
+                            android:text="To 01 May 2019 "
+                            android:textColor="#000"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/drinkTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                            android:fontFamily="@font/ptsregular"
+                            android:gravity="left|center_vertical"
+                            android:maxLines="3"
+                            android:text="@string/soft_drink"
+                            android:textColor="#000"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/orderdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_date_range_black_24dp"
+                                android:fontFamily="@font/ptsansregular"
+                                android:gravity="center"
+                                android:text="Order Date 02 April 2019"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:fontFamily="@font/chauregular"
+                                    android:gravity="center"
+                                    android:id="@+id/orderID"
+                                    android:text="@string/order_id"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/orderid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/chauregular"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/staus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/chauregular"
+                                android:gravity="center"
+                                android:layout_marginTop="4dp"
+                                android:text="OMR 114.00"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical">
+
+
+                            <TextView
+                                android:id="@+id/maintitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/doutedbackground"
+                                android:gravity="center"
+                                android:text="Breakfast"
+                                android:textColor="@color/colorPrimary"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/processTV"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="Status"
+                    android:fontFamily="@font/chauregular"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

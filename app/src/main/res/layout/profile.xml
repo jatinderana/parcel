@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#cc000000"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@+id/img_cross"
+                android:src="@drawable/ic_person_white" />
+
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/image"
+                android:fontFamily="@font/chauregular"
+                android:gravity="left"
+                android:text="@string/my_profile_string"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="#939393" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tv_title2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_title"
+            android:background="#cc000000"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/images"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_subs_white" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/images"
+                android:fontFamily="@font/chauregular"
+                android:gravity="left"
+                android:text="@string/my_subscriptions_string"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tv_title4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_title"
+            android:background="#cc000000"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/images2"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_menu_black_24dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/images"
+                android:fontFamily="@font/chauregular"
+                android:gravity="left"
+                android:text="@string/subscription_history_string"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_title3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_title"
+            android:background="#cc000000"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/images1"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_parcel_box" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/images"
+                android:fontFamily="@font/chauregular"
+                android:gravity="left"
+                android:text="@string/parcel_gathering_box_history"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_title5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_title"
+            android:background="#cc000000"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/images3"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/history" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/images"
+                android:fontFamily="@font/chauregular"
+                android:gravity="left"
+                android:text="@string/logout_string"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

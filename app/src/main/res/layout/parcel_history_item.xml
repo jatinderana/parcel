@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+ >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="228dp"
+        android:layout_margin="@dimen/_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/orderTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/chauregular"
+                android:text="@string/order_id_parcel"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/orderIDTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:layout_toEndOf="@+id/orderTV"
+                android:text="0"
+                android:fontFamily="@font/ptsansregular"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/orderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderTV"
+                android:layout_marginStart="@dimen/_4dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/chauregular"
+                android:text="@string/order_date_parcel"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/OrderDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderTV"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:layout_toEndOf="@+id/orderDate"
+                android:text="0"
+                android:fontFamily="@font/ptsansregular"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderDate"
+                android:layout_marginStart="@dimen/_4dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/chauregular"
+                android:text="@string/comapany_name_parcel"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/companyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/OrderDateTV"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/ptsansregular"
+                android:layout_toEndOf="@+id/companyName"
+                android:text=""
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/deliveryAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/companyName"
+                android:layout_marginStart="@dimen/_4dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/chauregular"
+                android:text="@string/delivery_address_string"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/deliveryTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/companyName"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/ptsansregular"
+                android:layout_toEndOf="@+id/deliveryAddress"
+                android:text=""
+                android:singleLine="true"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/floorTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deliveryAddress"
+                android:layout_marginStart="@dimen/_4dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/chauregular"
+                android:text="@string/floor_no_string"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/floorNoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deliveryTV"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:layout_toEndOf="@+id/floorTV"
+                android:text=""
+                android:fontFamily="@font/ptsansregular"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/amountLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/floorTV">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/amountTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:fontFamily="@font/chauregular"
+                        android:text="@string/amount_parcel"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/amountValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:layout_toEndOf="@+id/amountTV"
+                        android:text=""
+                        android:fontFamily="@font/ptsansregular"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/statusTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:fontFamily="@font/chauregular"
+                        android:text="@string/status_parcel"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/statusValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:layout_toEndOf="@+id/statusTV"
+                        android:text=""
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:singleLine="true"
+                        android:fontFamily="@font/ptsansregular"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/actionTV"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@+id/amountLL"
+                android:layout_marginStart="@dimen/_12dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:layout_marginEnd="@dimen/_12dp"
+                android:layout_marginBottom="@dimen/_12dp"
+                android:background="@drawable/backgroundbutton"
+                android:gravity="center"
+                android:text="@string/action_parcel"
+                android:fontFamily="@font/chauregular"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

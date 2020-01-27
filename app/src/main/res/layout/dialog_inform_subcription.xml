@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:background="#EFEFF4"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_cross"
+            android:src="@drawable/myfood1"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/image"
+            android:layout_weight="0.1"
+            android:fontFamily="@font/chauregular"
+            android:gravity="center"
+            android:text="@string/app_name_new"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_teachers"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_title"
+        android:divider="#004e4e4e"
+        android:dividerHeight="0dp"/>
+
+</LinearLayout>

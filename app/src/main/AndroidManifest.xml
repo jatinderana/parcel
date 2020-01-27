@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.INTERNAL_SYSTEM_WINDOW"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+
+        <activity android:name=".MyFreezeDialog"
+            android:configChanges="orientation"
+            android:screenOrientation="sensor"
+            android:theme="@style/Theme.UserDialog"></activity>
+
+        <activity android:name=".CardScreen.CardActivity"></activity>
+        <activity android:name=".FaqPage.FaqActivtiy" />
+        <activity
+            android:name=".TrackPackage.FoodTrackingActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ParcelHisotry.ParcelBoxHistoryActivity" />
+        <activity android:name=".FoodParcel.FoodParcelActivity" />
+        <activity android:name=".FoodCart.FoodCartActivity" />
+        <activity
+            android:name=".ParcelGeathering.ParcelBoxActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".GiftFriend.GiftFriendActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AddressSelect.AddAddressActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".AddressSelect.SelectAddressActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".PromoCode.PromoCodeActivity" />
+        <activity
+            android:name=".MySubcriptionMenu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MapsActivitys"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityMainHome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyHistory"
+            android:theme="@style/HiddenTitleTheme" />
+        <activity
+            android:name=".ChangePassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyProfile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MyAccountHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PrivacyPolicy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TermsConditions"
+            android:theme="@style/HiddenTitleTheme" />
+
+
+
+        <activity
+            android:name=".MyAccounts"
+            android:theme="@style/HiddenTitleTheme" />
+        <activity
+            android:name=".ParcelCart"
+            android:theme="@style/HiddenTitleTheme" />
+        <activity
+            android:name=".PartyBox"
+            android:screenOrientation="portrait"
+            android:theme="@style/HiddenTitleTheme" />
+        <activity
+            android:name=".ParcelCafe"
+            android:screenOrientation="portrait"
+            android:theme="@style/HiddenTitleTheme" />
+        <activity
+            android:name=".AddParcel.AddParcelCafe"
+            android:screenOrientation="portrait"
+            android:theme="@style/HiddenTitleTheme" />
+        <activity
+            android:name=".ViewMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/HiddenTitleTheme" />
+        <activity
+            android:name=".CalenderView"
+            android:screenOrientation="portrait"
+            android:theme="@style/HiddenTitleTheme" />
+        <activity
+            android:name=".MainMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/HiddenTitleTheme" />
+        <activity
+            android:name=".ContactUs"
+            android:screenOrientation="portrait"
+            android:theme="@style/HiddenTitleTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/HiddenTitleTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/HiddenTitleTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Paynow"
+            android:screenOrientation="portrait"
+            android:theme="@style/HiddenTitleTheme" />
+        <activity
+            android:name=".CheckoutPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/HiddenTitleTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ViewPagerAdapter" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SaplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".FirebaseClasses.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

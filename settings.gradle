@@ -1,0 +1,2 @@
+include ':app', ':cybersource_mPOS_SDK', ':CyberSource_mPOS_SDK'
+include 'MyApp', ':SpinnerIOS'

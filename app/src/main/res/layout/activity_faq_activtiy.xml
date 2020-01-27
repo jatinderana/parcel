@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.FaqPage.FaqActivtiy">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:weightSum="1.2"
+        android:elevation="7dp"
+        android:id="@+id/topRL"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_8dp"
+            android:src="@drawable/ic_arrow_back"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:text="@string/faq_string"
+            android:id="@+id/titleTV"
+            android:fontFamily="@font/chauregular"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/faqRL"
+        android:layout_marginBottom="@dimen/_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topRL"
+        android:layout_marginTop="@dimen/_10dp" />
+
+</android.support.constraint.ConstraintLayout>

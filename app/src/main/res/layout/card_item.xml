@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:layout_marginBottom="@dimen/_8dp"
+        android:background="@drawable/border_grey_back"
+        android:padding="@dimen/_8dp"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/card_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8dp"
+            android:id="@+id/cardIV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/cardNumber"
+            android:layout_toEndOf="@+id/cardIV"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:src="@drawable/ic_delete"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:id="@+id/deleteIV"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_height="24dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/default_string"
+    android:background="@drawable/button_green_back"
+    android:layout_marginEnd="@dimen/_8dp"
+    android:layout_centerVertical="true"
+    android:padding="@dimen/_8dp"
+    android:id="@+id/defaultTV"
+    android:visibility="gone"
+    android:layout_alignParentEnd="true"
+    android:textColor="@color/white"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

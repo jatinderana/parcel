@@ -1,0 +1,102 @@
+{
+  "project_info": {
+    "project_number": "53233586342",
+    "firebase_url": "https://foodparcel-a7232.firebaseio.com",
+    "project_id": "foodparcel-a7232",
+    "storage_bucket": "foodparcel-a7232.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53233586342:android:13c3c6a65bcbec53",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53233586342-i1o9rhm806gufbtkj25ud7av1ueq687u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "fa54f22baef8c8dd47c1bcd1d835b3b732fcfeb2"
+          }
+        },
+        {
+          "client_id": "53233586342-qt13bg9e8k1mr2uv5ehbjpdebr51e1md.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPz2tR1sV4MCaN6EWXD7HHnanHHR9SoY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53233586342-qt13bg9e8k1mr2uv5ehbjpdebr51e1md.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "53233586342-sj7s9d78brn66c7t21pi65eepuceh9bn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.FoodParcelCustomer.com",
+                "app_store_id": "1234"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53233586342:android:21a8d8eb368cd4a6d16467",
+        "android_client_info": {
+          "package_name": "com.parcelOman.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53233586342-lcjdb1677e3lan28tvifvh3ti050t1e7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parcelOman.customer",
+            "certificate_hash": "5314a3799dcfe1f46e88d9c748fa0c8ba00b62d4"
+          }
+        },
+        {
+          "client_id": "53233586342-qt13bg9e8k1mr2uv5ehbjpdebr51e1md.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+
+          "current_key": "AIzaSyDLOQsczTjNrp0wrCd0nrm8nhaP78PHly8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53233586342-qt13bg9e8k1mr2uv5ehbjpdebr51e1md.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "53233586342-sj7s9d78brn66c7t21pi65eepuceh9bn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.FoodParcelCustomer.com",
+                "app_store_id": "1234"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/card_no_string"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/cardTV" />
+
+    <EditText
+        android:id="@+id/cardET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:maxLength="16"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:inputType="number"
+        android:fontFamily="@font/ptsansregular"
+        android:hint="@string/card_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardTV" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/expiry_month"
+        android:layout_marginStart="@dimen/_8dp"
+        app:layout_constraintEnd_toStartOf="@+id/yearspin"
+        android:layout_marginTop="@dimen/_8dp"
+        android:focusable="false"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardET"
+        android:id="@+id/monthET" />
+
+    <Spinner
+        android:layout_width="0dp"
+        android:id="@+id/monthSpin"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        app:layout_constraintStart_toEndOf="@+id/yearspin"
+        android:fontFamily="@font/ptsansregular"
+        app:layout_constraintTop_toBottomOf="@+id/cardET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/yearspin"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/yearET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:fontFamily="@font/ptsansregular"
+        android:hint="@string/expiry_year"
+        android:focusable="false"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/monthSpin"
+        app:layout_constraintTop_toBottomOf="@+id/cardET" />
+    <!--<Spinner
+        android:layout_width="0dp"
+        android:id="@+id/yearspin"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:fontFamily="@font/ptsansregular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/monthSpin"
+        app:layout_constraintTop_toBottomOf="@+id/cardET"
+        android:layout_height="wrap_content"/>-->
+    <Spinner
+        android:layout_width="0dp"
+        android:id="@+id/yearspin"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:fontFamily="@font/ptsansregular"
+        app:layout_constraintEnd_toStartOf="@+id/monthSpin"
+        app:layout_constraintBottom_toBottomOf="@+id/monthSpin"
+        app:layout_constraintStart_toEndOf="@+id/monthSpin"
+        app:layout_constraintTop_toBottomOf="@+id/cardET"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cvv_string"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearspin"
+        android:id="@+id/cvvTV" />
+
+    <EditText
+        android:id="@+id/cvvET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:fontFamily="@font/ptsansregular"
+        android:hint="@string/cvv_string"
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvvTV" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvvET"
+        android:text="@string/make_this_default_card"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:textColor="@color/black"
+        android:id="@+id/defaultCB" />
+
+    <Button
+        android:id="@+id/closeBT"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_12dp"
+        android:fontFamily="@font/chauregular"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:padding="@dimen/_8dp"
+        android:text="@string/close_string"
+        android:background="@drawable/buttonbackground_gray"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/nextBT"
+        app:layout_constraintTop_toBottomOf="@+id/defaultCB" />
+
+
+    <Button
+        android:id="@+id/nextBT"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:background="@drawable/backgroundbutton"
+        android:fontFamily="@font/chauregular"
+        android:padding="@dimen/_8dp"
+        android:text="@string/save_string"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/defaultCB" />
+
+
+</android.support.constraint.ConstraintLayout>

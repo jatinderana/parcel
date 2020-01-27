@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/mainLL"
+    android:orientation="vertical"
+    android:padding="@dimen/_10dp">
+
+    <TextView
+        android:id="@+id/dialogTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_quantity_string"
+        android:fontFamily="@font/ptsansregular"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/quantID"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/buttonnext"
+        android:fontFamily="@font/ptsansregular"
+        android:gravity="center"
+        android:inputType="number"
+        android:hint="@string/enter_quantity_extra_string"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_12dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/ptsansregular"
+        android:text="@string/omr_0_string"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/termCB"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/i_agree_to_the_parcel_oman_terms_conditions"
+            android:textColor="@color/black"
+            android:id="@+id/agreeTV"
+            android:textSize="12sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp">
+
+        <TextView
+            android:id="@+id/nextBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/chauregular"
+            android:paddingStart="20dp"
+            android:paddingTop="@dimen/_8dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="@dimen/_8dp"
+            android:text="@string/next"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/closeBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:layout_toStartOf="@+id/nextBT"
+            android:background="@drawable/buttonbackground_gray"
+            android:fontFamily="@font/chauregular"
+            android:paddingStart="20dp"
+            android:paddingTop="@dimen/_8dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="@dimen/_8dp"
+            android:text="@string/close_string"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</LinearLayout>

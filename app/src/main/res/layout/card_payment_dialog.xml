@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/parcelIV"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/timeIV"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_10dp"
+            app:layout_constraintStart_toEndOf="@+id/parcelIV"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/timer" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:id="@+id/timeLL"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/timeIV"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/minuteTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:background="@color/mehroon"
+                    android:padding="10dp"
+                    android:text="00"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Minutes"
+                    android:id="@+id/minuteText"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/minuteTV" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:id="@+id/secondTV"
+                    android:background="@color/mehroon"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:id="@+id/secondText"
+                    android:text="Seconds"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/secondTV" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeLL"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardRV" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardRV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:fillViewport="true"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical"
+                    android:layout_height="wrap_content">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/cardCL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TextView
+                            android:id="@+id/cardTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:text="@string/card_no_string"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/cardET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:layout_marginEnd="@dimen/_8dp"
+                            android:fontFamily="@font/ptsansregular"
+                            android:hint="@string/card_no"
+                            android:inputType="number"
+                            android:maxLength="16"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cardTV" />
+
+                        <EditText
+                            android:id="@+id/monthET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:focusable="false"
+                            android:hint="@string/expiry_month"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toStartOf="@+id/yearspin"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cardET" />
+
+                        <EditText
+                            android:id="@+id/yearET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:layout_marginEnd="@dimen/_8dp"
+                            android:focusable="false"
+                            android:fontFamily="@font/ptsansregular"
+                            android:hint="@string/expiry_year"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/monthET"
+                            app:layout_constraintTop_toBottomOf="@+id/cardET" />
+
+                        <Spinner
+                            android:id="@+id/monthSpin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:layout_marginEnd="@dimen/_8dp"
+                            android:fontFamily="@font/ptsansregular"
+                            app:layout_constraintBottom_toBottomOf="@+id/yearspin"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/yearspin"
+                            app:layout_constraintTop_toBottomOf="@+id/cardET" />
+
+
+                        <Spinner
+                            android:id="@+id/yearspin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:layout_marginEnd="@dimen/_8dp"
+                            android:fontFamily="@font/ptsansregular"
+                            app:layout_constraintBottom_toBottomOf="@+id/monthSpin"
+                            app:layout_constraintEnd_toStartOf="@+id/monthSpin"
+                            app:layout_constraintStart_toEndOf="@+id/monthSpin"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cardET" />
+
+                        <TextView
+                            android:id="@+id/cvvTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:text="@string/cvv_string"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/monthSpin" />
+
+                        <EditText
+                            android:id="@+id/cvvET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:layout_marginEnd="@dimen/_8dp"
+                            android:fontFamily="@font/ptsansregular"
+                            android:hint="@string/cvv_string"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cvvTV" />
+
+                        <CheckBox
+                            android:id="@+id/saveCB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:text="@string/save_this_card_for_future_payments"
+                            android:textSize="13sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cvvET" />
+
+                        <Button
+                            android:id="@+id/closeBT"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:layout_marginEnd="@dimen/_8dp"
+                            android:background="@drawable/buttonbackground_gray"
+                            android:fontFamily="@font/chauregular"
+                            android:padding="@dimen/_8dp"
+                            android:text="@string/close_string"
+                            android:textColor="@color/black"
+                            app:layout_constraintEnd_toStartOf="@+id/nextBT"
+                            app:layout_constraintTop_toBottomOf="@+id/saveCB" />
+
+
+                        <Button
+                            android:id="@+id/nextBT"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:layout_marginEnd="@dimen/_8dp"
+                            android:background="@drawable/backgroundbutton"
+                            android:fontFamily="@font/chauregular"
+                            android:padding="@dimen/_8dp"
+                            android:text="@string/next"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/saveCB" />
+
+
+                        <TextView
+                            android:id="@+id/secureTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="15dp"
+                            android:drawableStart="@drawable/ic_verify"
+                            android:drawablePadding="@dimen/_4dp"
+                            android:text="@string/_100_secure"
+                            android:textSize="13sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/nextBT" />
+                    </android.support.constraint.ConstraintLayout>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+
